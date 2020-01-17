@@ -3,11 +3,13 @@ package com.digitalcookbook.service;
 import com.digitalcookbook.dto.UserDTO;
 import com.digitalcookbook.repository.UserRepo;
 import com.digitalcookbook.repository.mapper.UserMapper;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import java.util.Optional;
 
+@Service
 public class UserService {
 
     private final UserRepo userRepository;
